@@ -1,0 +1,10 @@
+9
+Arthur Armanelli;1120;90
+Bruno Romie;320;0
+Ian Sousa;640;0
+André Lima;560;0
+Isabella Lima;80;30
+Matthew Lima;80;0
+André Lima;560;170
+Mateus Carmo;640;240
+Maria Sousa;720;0

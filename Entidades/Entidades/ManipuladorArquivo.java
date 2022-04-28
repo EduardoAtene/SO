@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 
 public class ManipuladorArquivo {
 
-	public static void leitor(String path) throws IOException {
+	public static Empilhadeira leitor(String path) throws IOException {
 		BufferedReader buffRead = new BufferedReader(new InputStreamReader(new FileInputStream(path),"UTF-8"));
 		String linha = "";
 		Empilhadeira empilhadeira = new Empilhadeira();
@@ -34,6 +34,8 @@ public class ManipuladorArquivo {
 		}
 
 		buffRead.close();
+
+		return empilhadeira;
 	}
 
 	// public static void escritor(String path) throws IOException {

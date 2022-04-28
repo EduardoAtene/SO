@@ -26,14 +26,16 @@ public class Cliente {
     public void setPedido( Pedido pedido) {
         this.Pedido.add(pedido);
     }
+    public void setPedido( Pedido pedido,int index) {
+        this.Pedido.add(pedido);
+    }
 
-    public static Cliente clientHasExist(List<Cliente> Clientes,String nome) {
-        Cliente newCliente = new Cliente(nome);
+    public static int clientHasExist(List<Cliente> Clientes,String nome) {
         for(int i = 0; i < Clientes.size(); i++){
             Cliente clienteU = Clientes.get(i);
-            if(clienteU.Nome == nome)
-                return clienteU;
+            if(nome.equals(clienteU.Nome))
+                return i;
         }
-        return newCliente;
+        return -1;
     }
 }
