@@ -13,7 +13,7 @@ public class Pedido {
     public Pedido(int quantidadeProdutos, int prazoEnpacotamento){
         this.quantidadeProdutos = quantidadeProdutos;
         this.prazoEnpacotamento = prazoEnpacotamento;
-        this.tamanhoTotalProduto = this.quantidadeProdutos * tamanhoProduto;
+        this.tamanhoTotalProduto = this.quantidadeProdutos * tamanhoProduto; // Tamanho total do produto em geral
     }
 
     // Getters

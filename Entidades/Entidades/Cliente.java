@@ -8,6 +8,7 @@ import java.util.List;
  */
 public class Cliente {
 
+    // Modelo do Cliente, onde o Cliente tem um nome e pode ter VÁRIOS produtos
     private String Nome;
     private List<Pedido> Pedido = new ArrayList<Pedido>();
     

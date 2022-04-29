@@ -46,7 +46,7 @@ public class Empilhadeira {
     public void adicionarPedido(String[] linhaA) {
         int clienteHasExist;
         Pedido pedido = new Pedido(Integer.parseInt(linhaA[1]), Integer.parseInt(linhaA[2]));
-        clienteHasExist = -1;//Cliente.clientHasExist(this.Pedidos,linhaA[0]);
+        clienteHasExist = -1;//Cliente.clientHasExist(this.Pedidos,linhaA[0]); // Caso queira sem a estrutura organizada, incluir o -1
         if (clienteHasExist != -1) {
             Cliente cliente = Pedidos.get(clienteHasExist);
             cliente.setPedido(pedido);

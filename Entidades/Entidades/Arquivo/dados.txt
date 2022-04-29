@@ -2,10 +2,9 @@
 Arthur Armanelli;1120;90
 Bruno Romie;320;0
 Ian Sousa;640;0
-André Lima;560;0
+Amanda Lima;560;0
 Isabella Lima;80;180
 Matthew Lima;80;0
-André Lima;560;170
 Mateus Carmo;640;240
 Maria Sousa;720;0
 Isabella Romie;240;0
@@ -15,6 +14,7 @@ André Laine;720;0
 Túlio Sousa;1360;0
 Isabella Apolinario;1440;180
 André Santos;560;0
+André Lima;560;170
 Bruno Sousa;880;0
 Isabella Bolognani;720;0
 Rodrigo Rocha;400;0

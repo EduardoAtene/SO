@@ -5,7 +5,7 @@ import java.time.Duration;
 // import java.util.List;
 
 /**
- * PedidosSaida
+ * PedidosSaida | Modeo utilizado para a Empilhadeira, que é a Esteira
  */
 public class PedidosSaida {
 
@@ -33,6 +33,7 @@ public class PedidosSaida {
         double tamanhoMaximoPacote = Empilhadeira.getTamanhoPacotes();
         double tempoTransicao = Empilhadeira.getTransicao(); // Segundos
 
+        // Conta do tempo de produção total gasto do pedido. Incluso 5s do pacote e 0.5 da movimentação...
         this.quantidadePacotesProduzidos = (int )Math.ceil( this.tamanhoTotalProduto  / tamanhoMaximoPacote);
         this.tempoParaProducaoTotal = (int)(this.quantidadePacotesProduzidos * (tempoProducaoPacote + tempoTransicao));
         
@@ -40,12 +41,7 @@ public class PedidosSaida {
         int horas = total.toHoursPart();
         int minutos = total.toMinutesPart();
         int segundos = total.toSecondsPart();
-        
-        // int segundos = (int) this.tempoParaProducaoTotal;
-        // int horas = segundos / 3600;
-        // segundos %= 3600;
-        // int minutos = segundos / 60;
-        // segundos %= 60;
+
         this.tempoParaProducaoTotalMinutos = horas;
         this.tempoParaProducaoTotalHoras = minutos;
         this.tempoParaProducaoTotalSegundos = segundos;

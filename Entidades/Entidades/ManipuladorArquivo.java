@@ -2,15 +2,11 @@ package Entidades;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
-// import java.io.BufferedWriter;
-// import java.io.FileReader;
-// import java.io.FileWriter;
 import java.io.IOException;
-// import java.util.Scanner;
 import java.io.InputStreamReader;
 
 public class ManipuladorArquivo {
-
+	// Leitura do Arquivo
 	public static Empilhadeira leitor(String path) throws IOException {
 		BufferedReader buffRead = new BufferedReader(new InputStreamReader(new FileInputStream(path),"UTF-8"));
 		String linha = "";
@@ -37,15 +33,4 @@ public class ManipuladorArquivo {
 
 		return empilhadeira;
 	}
-
-	// public static void escritor(String path) throws IOException {
-	// 	BufferedWriter buffWrite = new BufferedWriter(new FileWriter(path));
-	// 	String linha = "";
-	// 	Scanner in = new Scanner(System.in);
-	// 	System.out.println("Escreva algo: ");
-	// 	linha = in.nextLine();
-	// 	buffWrite.append(linha + "\n");
-	// 	buffWrite.close();
-	// }
-
 }
